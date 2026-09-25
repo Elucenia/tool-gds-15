@@ -1,0 +1,476 @@
+{
+  "tool": {
+    "id": "gds-15",
+    "title": "Escala de Depressão Geriátrica (GDS-15)",
+    "short": "Rastreamento de depressão na pessoa idosa",
+    "desc": "Aplique a Escala de Depressão Geriátrica de 15 itens (GDS-15), rastreamento de depressão em idosos, com o ponto de corte validado no Brasil.",
+    "lead": "Rastreia sintomas depressivos em pessoas idosas com 15 perguntas de sim ou não, com menos itens somáticos que outras escalas.",
+    "spec": [
+      "geriatria",
+      "psiquiatria",
+      "medicina-de-familia-e-comunidade",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "q1",
+        "1. Está basicamente satisfeito com sua vida?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "1": "Não"
+          }
+        }
+      ],
+      [
+        "q2",
+        "2. Deixou muitos de seus interesses e atividades?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q3",
+        "3. Sente que sua vida está vazia?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q4",
+        "4. Aborrece-se com frequência?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q5",
+        "5. Sente-se de bom humor a maior parte do tempo?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "1": "Não"
+          }
+        }
+      ],
+      [
+        "q6",
+        "6. Tem medo de que algum mal vá lhe acontecer?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q7",
+        "7. Sente-se feliz a maior parte do tempo?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "1": "Não"
+          }
+        }
+      ],
+      [
+        "q8",
+        "8. Sente que sua situação não tem saída?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q9",
+        "9. Prefere ficar em casa a sair e fazer coisas novas?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q10",
+        "10. Sente que tem mais problemas de memória que a maioria?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q11",
+        "11. Acha maravilhoso estar vivo?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "1": "Não"
+          }
+        }
+      ],
+      [
+        "q12",
+        "12. Sente-se inútil nas atuais circunstâncias?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q13",
+        "13. Sente-se cheio de energia?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "1": "Não"
+          }
+        }
+      ],
+      [
+        "q14",
+        "14. Acha que sua situação é sem esperança?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "q15",
+        "15. Sente que a maioria das pessoas está melhor que você?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "GDS-15",
+      "unit": "de 15",
+      "bands": [
+        [
+          0,
+          "low",
+          "Sem sintomas depressivos significativos (0 a 5)"
+        ],
+        [
+          6,
+          "mid",
+          "Sugere depressão (6 a 10)",
+          "Confirmar com avaliação clínica pelos critérios do DSM-5 ou CID."
+        ],
+        [
+          11,
+          "high",
+          "Sugere depressão grave (11 a 15)",
+          "Avaliação clínica prioritária, incluindo risco de suicídio."
+        ]
+      ]
+    },
+    "formula": "<p>1 ponto para cada resposta que sugere depressão: <strong>\"não\"</strong> nas perguntas 1, 5, 7, 11 e 13; <strong>\"sim\"</strong> nas demais. Total de 0 a 15.</p><p>Ponto de corte na versão brasileira (Almeida e Almeida, 1999): <strong>≥ 6</strong> sugere depressão.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Interpretação"
+      ],
+      [
+        "0 a 5",
+        "Normal"
+      ],
+      [
+        "6 a 10",
+        "Sugere depressão leve a moderada"
+      ],
+      [
+        "11 a 15",
+        "Sugere depressão grave"
+      ]
+    ],
+    "table_note": "Faixas usadas no Caderno de Atenção Básica nº 19 do Ministério da Saúde (Envelhecimento e saúde da pessoa idosa, 2006).",
+    "tips": [
+      "É um instrumento de rastreamento: resultado positivo pede entrevista clínica; não é diagnóstico.",
+      "O desempenho cai na demência moderada a grave: nesses pacientes, prefira a Escala de Cornell, baseada na informação do cuidador.",
+      "Leia as perguntas como estão, pedindo resposta \"sim\" ou \"não\" referente à última semana; não interprete pelo paciente.",
+      "Pergunte ativamente sobre ideação suicida em qualquer escore positivo: idosos do sexo masculino têm as maiores taxas de suicídio.",
+      "A GDS é de domínio público e pode ser usada sem licença."
+    ],
+    "sources": [
+      [
+        "Yesavage JA et al. Development and validation of a geriatric depression screening scale: a preliminary report. J Psychiatr Res, 1982.",
+        "https://doi.org/10.1016/0022-3956(82)90033-4"
+      ],
+      [
+        "Sheikh JI, Yesavage JA. Geriatric Depression Scale (GDS): recent evidence and development of a shorter version. Clin Gerontol, 1986.",
+        "https://doi.org/10.1300/J018v05n01_09"
+      ],
+      [
+        "Almeida OP, Almeida SA. Confiabilidade da versão brasileira da Escala de Depressão em Geriatria (GDS) versão reduzida. Arq Neuropsiquiatr, 1999.",
+        "https://doi.org/10.1590/S0004-282X1999000300013"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhuma resposta depressiva: 0",
+        {
+          "q1": "0",
+          "q2": "0",
+          "q3": "0",
+          "q4": "0",
+          "q5": "0",
+          "q6": "0",
+          "q7": "0",
+          "q8": "0",
+          "q9": "0",
+          "q10": "0",
+          "q11": "0",
+          "q12": "0",
+          "q13": "0",
+          "q14": "0",
+          "q15": "0"
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        {
+          "q1": "1",
+          "q2": "0",
+          "q3": "0",
+          "q4": "1",
+          "q5": "0",
+          "q6": "0",
+          "q7": "0",
+          "q8": "0",
+          "q9": "1",
+          "q10": "1",
+          "q11": "0",
+          "q12": "0",
+          "q13": "1",
+          "q14": "0",
+          "q15": "0"
+        },
+        {
+          "score": 5,
+          "level": "low"
+        }
+      ],
+      [
+        "Seis respostas depressivas: 6 (corte brasileiro)",
+        {
+          "q1": "1",
+          "q2": "1",
+          "q3": "0",
+          "q4": "1",
+          "q5": "0",
+          "q6": "0",
+          "q7": "1",
+          "q8": "0",
+          "q9": "1",
+          "q10": "0",
+          "q11": "0",
+          "q12": "0",
+          "q13": "1",
+          "q14": "0",
+          "q15": "0"
+        },
+        {
+          "score": 6,
+          "level": "mid"
+        }
+      ],
+      [
+        "Todas as respostas depressivas: 15",
+        {
+          "q1": "1",
+          "q2": "1",
+          "q3": "1",
+          "q4": "1",
+          "q5": "1",
+          "q6": "1",
+          "q7": "1",
+          "q8": "1",
+          "q9": "1",
+          "q10": "1",
+          "q11": "1",
+          "q12": "1",
+          "q13": "1",
+          "q14": "1",
+          "q15": "1"
+        },
+        {
+          "score": 15,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 15",
+      "label": "GDS-15",
+      "fields": [
+        [
+          "q1",
+          "radio",
+          0
+        ],
+        [
+          "q2",
+          "radio",
+          0
+        ],
+        [
+          "q3",
+          "radio",
+          0
+        ],
+        [
+          "q4",
+          "radio",
+          0
+        ],
+        [
+          "q5",
+          "radio",
+          0
+        ],
+        [
+          "q6",
+          "radio",
+          0
+        ],
+        [
+          "q7",
+          "radio",
+          0
+        ],
+        [
+          "q8",
+          "radio",
+          0
+        ],
+        [
+          "q9",
+          "radio",
+          0
+        ],
+        [
+          "q10",
+          "radio",
+          0
+        ],
+        [
+          "q11",
+          "radio",
+          0
+        ],
+        [
+          "q12",
+          "radio",
+          0
+        ],
+        [
+          "q13",
+          "radio",
+          0
+        ],
+        [
+          "q14",
+          "radio",
+          0
+        ],
+        [
+          "q15",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Sem sintomas depressivos significativos (0 a 5)"
+        ],
+        [
+          6,
+          "mid",
+          "Sugere depressão (6 a 10)",
+          "Confirmar com avaliação clínica pelos critérios do DSM-5 ou CID."
+        ],
+        [
+          11,
+          "high",
+          "Sugere depressão grave (11 a 15)",
+          "Avaliação clínica prioritária, incluindo risco de suicídio."
+        ]
+      ]
+    },
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
