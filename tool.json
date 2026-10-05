@@ -5,13 +5,13 @@
     "short": "Rastreamento de depressão na pessoa idosa",
     "desc": "Aplique a Escala de Depressão Geriátrica de 15 itens (GDS-15), rastreamento de depressão em idosos, com o ponto de corte validado no Brasil.",
     "lead": "Rastreia sintomas depressivos em pessoas idosas com 15 perguntas de sim ou não, com menos itens somáticos que outras escalas.",
+    "kind": "Escore",
     "spec": [
       "geriatria",
       "psiquiatria",
       "medicina-de-familia-e-comunidade",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "q1",
@@ -179,56 +179,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "GDS-15",
-      "unit": "de 15",
-      "bands": [
-        [
-          0,
-          "low",
-          "Sem sintomas depressivos significativos (0 a 5)"
-        ],
-        [
-          6,
-          "mid",
-          "Sugere depressão (6 a 10)",
-          "Confirmar com avaliação clínica pelos critérios do DSM-5 ou CID."
-        ],
-        [
-          11,
-          "high",
-          "Sugere depressão grave (11 a 15)",
-          "Avaliação clínica prioritária, incluindo risco de suicídio."
-        ]
-      ]
-    },
     "formula": "<p>1 ponto para cada resposta que sugere depressão: <strong>\"não\"</strong> nas perguntas 1, 5, 7, 11 e 13; <strong>\"sim\"</strong> nas demais. Total de 0 a 15.</p><p>Ponto de corte na versão brasileira (Almeida e Almeida, 1999): <strong>≥ 6</strong> sugere depressão.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Interpretação"
-      ],
-      [
-        "0 a 5",
-        "Normal"
-      ],
-      [
-        "6 a 10",
-        "Sugere depressão leve a moderada"
-      ],
-      [
-        "11 a 15",
-        "Sugere depressão grave"
-      ]
-    ],
-    "table_note": "Faixas usadas no Caderno de Atenção Básica nº 19 do Ministério da Saúde (Envelhecimento e saúde da pessoa idosa, 2006).",
-    "tips": [
-      "É um instrumento de rastreamento: resultado positivo pede entrevista clínica; não é diagnóstico.",
-      "O desempenho cai na demência moderada a grave: nesses pacientes, prefira a Escala de Cornell, baseada na informação do cuidador.",
-      "Leia as perguntas como estão, pedindo resposta \"sim\" ou \"não\" referente à última semana; não interprete pelo paciente.",
-      "Pergunte ativamente sobre ideação suicida em qualquer escore positivo: idosos do sexo masculino têm as maiores taxas de suicídio.",
-      "A GDS é de domínio público e pode ser usada sem licença."
-    ],
     "sources": [
       [
         "Yesavage JA et al. Development and validation of a geriatric depression screening scale: a preliminary report. J Psychiatr Res, 1982.",
@@ -341,108 +292,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 15",
-      "label": "GDS-15",
-      "fields": [
-        [
-          "q1",
-          "radio",
-          0
-        ],
-        [
-          "q2",
-          "radio",
-          0
-        ],
-        [
-          "q3",
-          "radio",
-          0
-        ],
-        [
-          "q4",
-          "radio",
-          0
-        ],
-        [
-          "q5",
-          "radio",
-          0
-        ],
-        [
-          "q6",
-          "radio",
-          0
-        ],
-        [
-          "q7",
-          "radio",
-          0
-        ],
-        [
-          "q8",
-          "radio",
-          0
-        ],
-        [
-          "q9",
-          "radio",
-          0
-        ],
-        [
-          "q10",
-          "radio",
-          0
-        ],
-        [
-          "q11",
-          "radio",
-          0
-        ],
-        [
-          "q12",
-          "radio",
-          0
-        ],
-        [
-          "q13",
-          "radio",
-          0
-        ],
-        [
-          "q14",
-          "radio",
-          0
-        ],
-        [
-          "q15",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Sem sintomas depressivos significativos (0 a 5)"
-        ],
-        [
-          6,
-          "mid",
-          "Sugere depressão (6 a 10)",
-          "Confirmar com avaliação clínica pelos critérios do DSM-5 ou CID."
-        ],
-        [
-          11,
-          "high",
-          "Sugere depressão grave (11 a 15)",
-          "Avaliação clínica prioritária, incluindo risco de suicídio."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -451,17 +300,563 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:02:43.262Z",
+      "total": 32768,
+      "passed": 32768,
+      "sourceRowCount": 32768,
+      "uniqueApiInputCount": 32768,
+      "sourceContextCount": 32768,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "106ec84dafb825031cf8cfad58a091c2d26b27299cd6db29daf53fd2bb5d94f8",
+        "total": 32768,
+        "bankRowCount": 32768,
+        "uniqueApiInputCount": 32768,
+        "sourceContextCount": 32768,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+            "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+          },
+          {
+            "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+            "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+          "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+        },
+        "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 32768,
+        "uniqueApiInputs": 32768,
+        "duplicateRows": 0,
+        "expectedTupleSha256": "cdcfaff93cbd9b9b487397f9c538e01e409272f6d72a98c910a00519e1a505dc"
+      },
+      "scope": "Previously selected source integer point total only: Exhaustive2^15=32768 normalized point-code combinations; independent yes/no source inversion witnesses for all15items, no double inversion.",
+      "sources": [
+        {
+          "id": "gds-15",
+          "edition": "GDS15/Sheikh–Yesavage1986; author-hosted short form scoring",
+          "primaryReads": [
+            {
+              "url": "https://web.stanford.edu/~yesavage/GDS.english.short.score.html",
+              "access": "Direct original author HTML retrieved and all15 scoring rows/HTML bold answers read",
+              "artifact": "six-screening-primary-final28/gds-author-scoring.html",
+              "sha256": "367de9e94a83d28bbb2e85bc0afd06dedcfbc80466b7f320541156139c0e0157",
+              "readScope": "15 items and depression-scored bold answers; no additional psychometric derivation"
+            },
+            {
+              "url": "https://web.stanford.edu/~yesavage/GDS.html",
+              "access": "Original author introduction, references and translation/rights notices read",
+              "artifact": "six-screening-primary-final28/gds-author-home.html",
+              "sha256": "9f33c8993ee6b71a5a4a1163d64e8a7f55e0c01db7764ef2af665470a1df515d",
+              "readScope": "Author states original scale public domain due federal funding but disclaims accuracy of translations; not an ELUCENIA instrument/translation rights adjudication"
+            }
+          ],
+          "constants": {
+            "items": 15,
+            "pointForNo": [
+              1,
+              5,
+              7,
+              11,
+              13
+            ],
+            "pointForYes": [
+              2,
+              3,
+              4,
+              6,
+              8,
+              9,
+              10,
+              12,
+              14,
+              15
+            ],
+            "maximum": 15
+          },
+          "limitations": [
+            "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+            "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+            "Original1986 publisher article not fully retrieved; author scoring form supplies tested point contract. Almeida1999 Brazilian threshold≥6/reliability not independently revalidated here. GDS8 local wording differs in nuance from author English helplessness; no questionnaire semantic equivalence certification."
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+      "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+          "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+        },
+        "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+      },
+      "freshAdapterExecutions": 98304,
+      "freshVmExecutions": 98304,
+      "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 32768×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/gds-15/calculator.js",
+          "app": "website",
+          "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/gds-15/calculator.js",
+          "app": "dashboard",
+          "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/gds-15/calculator.js",
+          "app": "command-center",
+          "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+        }
+      ],
+      "qualifications": [
+        "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+        "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+        "Original1986 publisher article not fully retrieved; author scoring form supplies tested point contract. Almeida1999 Brazilian threshold≥6/reliability not independently revalidated here. GDS8 local wording differs in nuance from author English helplessness; no questionnaire semantic equivalence certification.",
+        "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+        "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+        "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+        "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+        "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "GDS 15/Sheikh Yesavage 1986:15 itens, inversão 1/5/7/11/13; corte PTAlmeida 1999≥6",
+    "implementationVersion": "gds-15@native-2026-10-03+6ee744024a79",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7183759/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "1 ponto para cada resposta que sugere depressão: \"não\" nas perguntas 1, 5, 7, 11 e 13; \"sim\" nas demais. Total de 0 a 15. Ponto de corte na versão brasileira (Almeida e Almeida, 1999): ≥ 6 sugere depressão.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "q1",
+            "label": "1. Está basicamente satisfeito com sua vida?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "1": "Não"
+            }
+          },
+          {
+            "key": "q2",
+            "label": "2. Deixou muitos de seus interesses e atividades?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q3",
+            "label": "3. Sente que sua vida está vazia?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q4",
+            "label": "4. Aborrece-se com frequência?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q5",
+            "label": "5. Sente-se de bom humor a maior parte do tempo?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "1": "Não"
+            }
+          },
+          {
+            "key": "q6",
+            "label": "6. Tem medo de que algum mal vá lhe acontecer?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q7",
+            "label": "7. Sente-se feliz a maior parte do tempo?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "1": "Não"
+            }
+          },
+          {
+            "key": "q8",
+            "label": "8. Sente que sua situação não tem saída?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q9",
+            "label": "9. Prefere ficar em casa a sair e fazer coisas novas?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q10",
+            "label": "10. Sente que tem mais problemas de memória que a maioria?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q11",
+            "label": "11. Acha maravilhoso estar vivo?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "1": "Não"
+            }
+          },
+          {
+            "key": "q12",
+            "label": "12. Sente-se inútil nas atuais circunstâncias?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q13",
+            "label": "13. Sente-se cheio de energia?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "1": "Não"
+            }
+          },
+          {
+            "key": "q14",
+            "label": "14. Acha que sua situação é sem esperança?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "q15",
+            "label": "15. Sente que a maioria das pessoas está melhor que você?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "0718f49da26429cc594ca25da9e7cd76e47cd48d85577e4556bb9a1b56b1b4f7"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Yesavage JA et al. Development and validation of a geriatric depression screening scale: a preliminary report. J Psychiatr Res, 1982.",
+          "url": "https://doi.org/10.1016/0022-3956(82)90033-4",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Development and validation of a geriatric depression screening scale: a preliminary report.",
+            "year": "1982",
+            "firstPublicationDate": "1982-01-01",
+            "doi": "10.1016/0022-3956(82)90033-4",
+            "pmid": "7183759",
+            "journal": "Journal of psychiatric research",
+            "authors": "Yesavage JA, Brink TL, Rose TL, Lum O, Huang V, Adey M, Leirer VO."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7183759/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "5f3834b44b88d3f45726defb624d7705ce9bf776663d1b3593f64b021e414bbf",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Sheikh JI, Yesavage JA. Geriatric Depression Scale (GDS): recent evidence and development of a shorter version. Clin Gerontol, 1986.",
+          "url": "https://doi.org/10.1300/J018v05n01_09",
+          "class": "publisher-deposited-bibliography-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publisherDepositedMetadata": {
+            "title": "9/Geriatric Depression Scale (GDS)",
+            "doi": "10.1300/j018v05n01_09",
+            "year": 1986,
+            "publisher": "Informa UK Limited",
+            "journal": "Clinical Gerontologist",
+            "authors": [
+              "Jerome A. Yesavage",
+              "Javaid I. Sheikh"
+            ],
+            "url": "https://doi.org/10.1300/j018v05n01_09"
+          },
+          "publication": {
+            "title": "9/Geriatric Depression Scale (GDS)",
+            "doi": "10.1300/j018v05n01_09",
+            "year": 1986,
+            "publisher": "Informa UK Limited",
+            "journal": "Clinical Gerontologist",
+            "authors": [
+              "Jerome A. Yesavage",
+              "Javaid I. Sheikh"
+            ],
+            "url": "https://doi.org/10.1300/j018v05n01_09"
+          }
+        },
+        {
+          "citation": "Almeida OP, Almeida SA. Confiabilidade da versão brasileira da Escala de Depressão em Geriatria (GDS) versão reduzida. Arq Neuropsiquiatr, 1999.",
+          "url": "https://doi.org/10.1590/S0004-282X1999000300013",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "[Reliability of the Brazilian version of the ++abbreviated form of Geriatric Depression Scale (GDS) short form].",
+            "year": "1999",
+            "firstPublicationDate": "1999-06-01",
+            "doi": "10.1590/s0004-282x1999000300013",
+            "pmid": "10450349",
+            "journal": "Arquivos de neuro-psiquiatria",
+            "authors": "Almeida OP, Almeida SA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10450349/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "376998b3f3134d7d45db6bf689f3e87da05470367af65e6a3a4881a2c5ccbdb8",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:02:43.262Z",
+        "total": 32768,
+        "passed": 32768,
+        "sourceRowCount": 32768,
+        "uniqueApiInputCount": 32768,
+        "sourceContextCount": 32768,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "106ec84dafb825031cf8cfad58a091c2d26b27299cd6db29daf53fd2bb5d94f8",
+          "total": 32768,
+          "bankRowCount": 32768,
+          "uniqueApiInputCount": 32768,
+          "sourceContextCount": 32768,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-screening-independent-expectations-final28.json",
+              "sha256": "2cbc1f414248ca8b232eca6ddb7843779fa1b3723758d27a7f29a3dd4c947b97"
+            },
+            {
+              "file": "reports/review-20261003/six-screening-primary-source-review-final28-v2.json",
+              "sha256": "2aa00562adf4ec500ce3367132a9ef92a84d610bfd6a7d68671b2bd1dad4f9e3"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+            "sha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89"
+          },
+          "packagingRequirement": "Complete downloadable expected/obtained bank; copy the file byte-exactly into each package. New formula prose/field/source revisions compose under separate ownership."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 32768,
+          "uniqueApiInputs": 32768,
+          "duplicateRows": 0,
+          "expectedTupleSha256": "cdcfaff93cbd9b9b487397f9c538e01e409272f6d72a98c910a00519e1a505dc"
+        },
+        "scope": "Previously selected source integer point total only: Exhaustive2^15=32768 normalized point-code combinations; independent yes/no source inversion witnesses for all15items, no double inversion.",
+        "sources": [
+          {
+            "id": "gds-15",
+            "edition": "GDS15/Sheikh–Yesavage1986; author-hosted short form scoring",
+            "primaryReads": [
+              {
+                "url": "https://web.stanford.edu/~yesavage/GDS.english.short.score.html",
+                "access": "Direct original author HTML retrieved and all15 scoring rows/HTML bold answers read",
+                "artifact": "six-screening-primary-final28/gds-author-scoring.html",
+                "sha256": "367de9e94a83d28bbb2e85bc0afd06dedcfbc80466b7f320541156139c0e0157",
+                "readScope": "15 items and depression-scored bold answers; no additional psychometric derivation"
+              },
+              {
+                "url": "https://web.stanford.edu/~yesavage/GDS.html",
+                "access": "Original author introduction, references and translation/rights notices read",
+                "artifact": "six-screening-primary-final28/gds-author-home.html",
+                "sha256": "9f33c8993ee6b71a5a4a1163d64e8a7f55e0c01db7764ef2af665470a1df515d",
+                "readScope": "Author states original scale public domain due federal funding but disclaims accuracy of translations; not an ELUCENIA instrument/translation rights adjudication"
+              }
+            ],
+            "constants": {
+              "items": 15,
+              "pointForNo": [
+                1,
+                5,
+                7,
+                11,
+                13
+              ],
+              "pointForYes": [
+                2,
+                3,
+                4,
+                6,
+                8,
+                9,
+                10,
+                12,
+                14,
+                15
+              ],
+              "maximum": 15
+            },
+            "limitations": [
+              "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+              "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+              "Original1986 publisher article not fully retrieved; author scoring form supplies tested point contract. Almeida1999 Brazilian threshold≥6/reliability not independently revalidated here. GDS8 local wording differs in nuance from author English helplessness; no questionnaire semantic equivalence certification."
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-screening-independent-source-check-final28.json",
+        "evidenceSha256": "9aabf1baacf8aa7df35309a42f2d7e06ec39d67c63fc827ec17f5c5785f1dc89",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/six-screening-independent-peer-verify-final28.json",
+            "sha256": "f44cf7582617795c9cbb3daf2883b2846546a4249579e9c63b9d0c9d5e3b339c"
+          },
+          "scope": "Independent own frozen expectations plus reauthored original45368 vectors; three-source Node and actual isolatedChromium totals only."
+        },
+        "freshAdapterExecutions": 98304,
+        "freshVmExecutions": 98304,
+        "actualBrowserEvidenceScope": "Original source28 actual isolated Chromium 32768×3 unchanged adapter captures retained in the bank; not a served page/UI proof.",
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/gds-15/calculator.js",
+            "app": "website",
+            "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/gds-15/calculator.js",
+            "app": "dashboard",
+            "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/gds-15/calculator.js",
+            "app": "command-center",
+            "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+          }
+        ],
+        "qualifications": [
+          "Selected point arithmetic only; clinical thresholds, diagnosis, referral, treatment, language validation and instrument reproduction rights are not certified.",
+          "Question wording and every population/edition are not established equivalent by a sum-of-codes test. Source metadata access is distinguished from actual targeted table/scoring reads.",
+          "Original1986 publisher article not fully retrieved; author scoring form supplies tested point contract. Almeida1999 Brazilian threshold≥6/reliability not independently revalidated here. GDS8 local wording differs in nuance from author English helplessness; no questionnaire semantic equivalence certification.",
+          "Only caller-selected raw.score integer total is projected into this bank. Original main display, source response-position witnesses and item10 numeric component remain in the untouched donor report; no clinical level, note/verdict, self-harm alarm, diagnosis, treatment or instrument-rubric equivalence is approved.",
+          "All cases and all projected expected/obtained totals are present. Numerical observation arrays are indexed by the exact original case index; mirror/runtime executions do not multiply case or unique-input counts.",
+          "Source access is limited to the precisely recorded original/direct/indexed sections. Existence of an edition or source hyperlink does not mean the entire original paper or questionnaire was read.",
+          "EPDS ordering prose is independently owned by the nine-target clarification candidate; future catalog/resolver merges must preserve those fields rather than replace whole snapshots.",
+          "Fresh compiled/source/package/browser bindings are still required. Clinical validation, official/professional language review, source rights and full-method conformance remain not-performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+    },
+    "limits": "Versão de 15 itens para rastreamento em pessoas idosas. O estudo brasileiro de confiabilidade recrutou um ambulatório especializado e excluiu barreiras sensoriais/linguísticas graves e comprometimento cognitivo definido no protocolo. Isso não estabelece elegibilidade universal. O corte 5/6 foi relatado a partir de estudo de validade citado, não reestimado nesse reteste.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.843Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não foram conferidas no artigo de validade citado todas as propriedades do corte ou os direitos de reprodução."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gds-15/calculator.js",
+    "bytes": 6078,
+    "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "323e11f6867c223260d1ab2a9760ec98f72b1629a2708146fc10b88a016085d5",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "8b171634ffb3dcb4d06899dc971ebe96abc6cfcdc626c52a2ea714c522aa718d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "8b171634ffb3dcb4d06899dc971ebe96abc6cfcdc626c52a2ea714c522aa718d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
