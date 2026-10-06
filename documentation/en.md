@@ -162,3 +162,31 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No significant depressive symptoms (0 to 5)
+
+
+### 2
+
+No significant depressive symptoms (0 to 5)
+
+
+### 3
+
+Suggests depression (6 to 10)
+
+Confirm with clinical assessment using DSM-5 or ICD criteria.
+
+
+### 4
+
+Suggests severe depression (11 to 15)
+
+Clinical assessment is the priority, including suicide risk.
+

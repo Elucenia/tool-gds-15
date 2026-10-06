@@ -162,3 +162,31 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Nessun sintomo depressivo significativo (0 a 5)
+
+
+### 2
+
+Nessun sintomo depressivo significativo (0 a 5)
+
+
+### 3
+
+Suggerisce depressione (6 a 10)
+
+Confermare con valutazione clinica secondo i criteri DSM-5 o ICD.
+
+
+### 4
+
+Suggerisce depressione grave (11 a 15)
+
+La valutazione clinica è prioritaria, incluso il rischio di suicidio.
+

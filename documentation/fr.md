@@ -162,3 +162,31 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Aucun symptôme dépressif significatif (0 à 5)
+
+
+### 2
+
+Aucun symptôme dépressif significatif (0 à 5)
+
+
+### 3
+
+Évoque une dépression (6 à 10)
+
+Confirmer par une évaluation clinique selon les critères du DSM-5 ou de la CIM.
+
+
+### 4
+
+Évoque une dépression sévère (11 à 15)
+
+L’évaluation clinique est prioritaire, y compris le risque suicidaire.
+

@@ -438,7 +438,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "GDS 15/Sheikh Yesavage 1986:15 itens, inversão 1/5/7/11/13; corte PTAlmeida 1999≥6",
-    "implementationVersion": "gds-15@native-2026-10-03+6ee744024a79",
+    "implementationVersion": "gds-15@native-2026-10-05+3e406952c0ea",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/7183759/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -821,7 +821,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+      "implementationHash": "3e406952c0eaefc908a4a9d7dbc6e6fe278e1f3666c5d48d3a25e56b36db0992",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "gds-15@native-2026-10-03+6ee744024a79",
+          "previousImplementationHash": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83",
+          "implementationHash": "3e406952c0eaefc908a4a9d7dbc6e6fe278e1f3666c5d48d3a25e56b36db0992",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "0718f49da26429cc594ca25da9e7cd76e47cd48d85577e4556bb9a1b56b1b4f7",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Versão de 15 itens para rastreamento em pessoas idosas. O estudo brasileiro de confiabilidade recrutou um ambulatório especializado e excluiu barreiras sensoriais/linguísticas graves e comprometimento cognitivo definido no protocolo. Isso não estabelece elegibilidade universal. O corte 5/6 foi relatado a partir de estudo de validade citado, não reestimado nesse reteste.",
     "sourceLimitEvidence": {
@@ -840,20 +868,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/gds-15/calculator.js",
-    "bytes": 6078,
-    "sha256": "6ee744024a79f91999eaf141e26aeb6d7d8c723e76ecd500cb4104862f279e83"
+    "bytes": 6283,
+    "sha256": "3e406952c0eaefc908a4a9d7dbc6e6fe278e1f3666c5d48d3a25e56b36db0992"
   },
-  "sourceToolSha256": "323e11f6867c223260d1ab2a9760ec98f72b1629a2708146fc10b88a016085d5",
+  "sourceToolSha256": "81306c1a85ef5717129729cda8dd4370417e11f8a1d75ec2298fc7d02491e174",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "8b171634ffb3dcb4d06899dc971ebe96abc6cfcdc626c52a2ea714c522aa718d",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "8b171634ffb3dcb4d06899dc971ebe96abc6cfcdc626c52a2ea714c522aa718d",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

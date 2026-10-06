@@ -1,0 +1,607 @@
+{
+  "id": "gds-15",
+  "implementationVersion": "gds-15@native-2026-10-05+3e406952c0ea",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem sintomas depressivos significativos (0 a 5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem sintomas depressivos significativos (0 a 5)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugere depressão (6 a 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Confirmar com avaliação clínica pelos critérios do DSM-5 ou CID.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugere depressão grave (11 a 15)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avaliação clínica prioritária, incluindo risco de suicídio.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No significant depressive symptoms (0 to 5)",
+            "locale": "en",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No significant depressive symptoms (0 to 5)",
+            "locale": "en",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggests depression (6 to 10)",
+            "locale": "en",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "Confirm with clinical assessment using DSM-5 or ICD criteria.",
+            "locale": "en",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggests severe depression (11 to 15)",
+            "locale": "en",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "Clinical assessment is the priority, including suicide risk.",
+            "locale": "en",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin síntomas depresivos significativos (0 a 5)",
+            "locale": "es",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin síntomas depresivos significativos (0 a 5)",
+            "locale": "es",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugiere depresión (6 a 10)",
+            "locale": "es",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "Confirmar con evaluación clínica según los criterios del DSM-5 o CIE.",
+            "locale": "es",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sugiere depresión grave (11 a 15)",
+            "locale": "es",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "La evaluación clínica es prioritaria, incluido el riesgo de suicidio.",
+            "locale": "es",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aucun symptôme dépressif significatif (0 à 5)",
+            "locale": "fr",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aucun symptôme dépressif significatif (0 à 5)",
+            "locale": "fr",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Évoque une dépression (6 à 10)",
+            "locale": "fr",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "Confirmer par une évaluation clinique selon les critères du DSM-5 ou de la CIM.",
+            "locale": "fr",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Évoque une dépression sévère (11 à 15)",
+            "locale": "fr",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "L’évaluation clinique est prioritaire, y compris le risque suicidaire.",
+            "locale": "fr",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Keine signifikanten depressiven Symptome (0 bis 5)",
+            "locale": "de",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Keine signifikanten depressiven Symptome (0 bis 5)",
+            "locale": "de",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Spricht für Depression (6 bis 10)",
+            "locale": "de",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "Mit klinischer Beurteilung nach DSM-5- oder ICD-Kriterien bestätigen.",
+            "locale": "de",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Spricht für schwere Depression (11 bis 15)",
+            "locale": "de",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "Die klinische Beurteilung hat Priorität, einschließlich Suizidrisiko.",
+            "locale": "de",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessun sintomo depressivo significativo (0 a 5)",
+            "locale": "it",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessun sintomo depressivo significativo (0 a 5)",
+            "locale": "it",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggerisce depressione (6 a 10)",
+            "locale": "it",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "Confermare con valutazione clinica secondo i criteri DSM-5 o ICD.",
+            "locale": "it",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Suggerisce depressione grave (11 a 15)",
+            "locale": "it",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "La valutazione clinica è prioritaria, incluso il rischio di suicidio.",
+            "locale": "it",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا توجد أعراض اكتئابية مهمة (0 إلى 5)",
+            "locale": "ar",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا توجد أعراض اكتئابية مهمة (0 إلى 5)",
+            "locale": "ar",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يوحي بالاكتئاب (6 إلى 10)",
+            "locale": "ar",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "تأكيد ذلك بالتقييم السريري وفق معايير DSM-5 أو ICD.",
+            "locale": "ar",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "يوحي باكتئاب شديد (11 إلى 15)",
+            "locale": "ar",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "التقييم السريري أولوية، بما في ذلك خطر الانتحار.",
+            "locale": "ar",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "无明显抑郁症状（0 到 5）",
+            "locale": "zh",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "无明显抑郁症状（0 到 5）",
+            "locale": "zh",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "提示抑郁（6 到 10）",
+            "locale": "zh",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "请根据 DSM-5 或 ICD 标准进行临床评估确认。",
+            "locale": "zh",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "提示重度抑郁（11 到 15）",
+            "locale": "zh",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "临床评估优先，包括自杀风险。",
+            "locale": "zh",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "有意な抑うつ症状なし（0～5）",
+            "locale": "ja",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "有意な抑うつ症状なし（0～5）",
+            "locale": "ja",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "うつ病を示唆する（6～10）",
+            "locale": "ja",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "DSM-5またはICD基準による臨床評価で確認する。",
+            "locale": "ja",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度うつ病を示唆する（11～15）",
+            "locale": "ja",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "自殺リスクを含め、臨床評価を優先する。",
+            "locale": "ja",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhuma resposta depressiva: 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कोई महत्वपूर्ण अवसादग्रस्त लक्षण नहीं (0 से 5)",
+            "locale": "hi",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Insatisfeito, sem energia, prefere ficar em casa, entediado, esquecido: 5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कोई महत्वपूर्ण अवसादग्रस्त लक्षण नहीं (0 से 5)",
+            "locale": "hi",
+            "template": "documented-authored-4ebbf90976e69f04e4c0"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Seis respostas depressivas: 6 (corte brasileiro)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "अवसाद का संकेत देता है (6 से 10)",
+            "locale": "hi",
+            "template": "documented-authored-73449a7794ef2f1782b5"
+          },
+          "note": {
+            "text": "DSM-5 या ICD मानदंडों के अनुसार नैदानिक मूल्यांकन से पुष्टि करें।",
+            "locale": "hi",
+            "template": "documented-authored-50d46cfae7ebd176c8ba"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todas as respostas depressivas: 15",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर अवसाद का संकेत देता है (11 से 15)",
+            "locale": "hi",
+            "template": "documented-authored-28459900187d1fb91374"
+          },
+          "note": {
+            "text": "आत्महत्या के जोखिम सहित, नैदानिक मूल्यांकन प्राथमिक है।",
+            "locale": "hi",
+            "template": "documented-authored-17e6bd5f58aa538de641"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
